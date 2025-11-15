@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Menu</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      background-color: #f2e8da; /* color hueso */
+      color: #000;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .logo {
+      max-width: 300px;
+      margin: 40px auto 60px auto; /* más espacio inferior */
+      display: block;
+    }
+
+    .flags {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto 60px auto;  /* centrado y equilibrado */
+    }
+
+    .flag-option {
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .flag-option:hover {
+      transform: scale(1.05);
+    }
+
+    .flag-option img {
+      width: 160px;
+      height: 100px;
+      border-radius: 12px;
+      border: 3px solid #000;
+      object-fit: cover;
+      display: block;
+    }
+
+    .socials {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 60px; /* más espacio superior */
+    }
+
+    .socials a {
+      font-size: 3rem;
+      cursor: pointer;
+      transition: transform 0.2s;
+      color: #000;
+    }
+
+    .socials a:hover {
+      transform: scale(1.2);
+    }
+
+    @media (max-width: 600px) {
+      .flag-option img {
+        width: 120px;
+        height: 75px;
+      }
+      .logo {
+        max-width: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Logo -->
+  <img src="Logo La Finca.png" alt="La Finca Logo" class="logo">
+
+
+  <!-- Bandera centrada entre logo y redes -->
+  <div class="flags">
+    <div class="flag-option" onclick="window.open('https://github.com/GrupoD-code/Asador_La_Finca/blob/73ecfd1ed94f25ae3d6ab9f229b9250c02189027/CARTA%20NUEVA%20INGL%C3%89S%20LA%20FINCA%202025%20(2)%20(1)_compressed.pdf', '_blank')">
+      <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="English Menu">
+    </div>
+  </div>
+
+  <!-- Redes sociales -->
+  <div class="socials">
+    <a href="https://www.instagram.com/asadorlafincasevilla/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.facebook.com/asadorlafincasevilla/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+  </div>
+
+</body>
+</html>
